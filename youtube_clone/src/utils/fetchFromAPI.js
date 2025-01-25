@@ -5,7 +5,7 @@ const axios = require('axios');
 
 export const fetchFromAPI = async(url) => {
   const { data } = await axios.get(
-    "https://www.googleapis.com/youtube/v3/videos?key=AIzaSyBUlx9yYTITAYsK_yWmmpm8TrmZ0uQvhUA&maxWidth=10&part=snippet,contentDetails,statistics&chart=mostPopular&maxResult=40"
+    "https://www.googleapis.com/youtube/v3/videos?key=<key>&maxWidth=10&part=snippet,contentDetails,statistics&chart=mostPopular&maxResult=40"
   );
   //console.log(responce);
   return data;
